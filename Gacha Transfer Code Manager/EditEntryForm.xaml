@@ -1,0 +1,30 @@
+﻿<Window x:Class="Gacha_Transfer_Code_Manager.EditEntryForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Gacha_Transfer_Code_Manager"
+        mc:Ignorable="d"
+        Title="EditEntryForm" Height="540" Width="345">
+    
+    <Grid x:Name="FormGrid" Height="504" Width="340">
+        <Button x:Name="SaveButton" Content="Save" HorizontalAlignment="Left" Margin="14,470,0,0" VerticalAlignment="Top" Click="SaveButton_Click" Width="75" Height="25" IsDefault="True"/>
+        <Button x:Name="CancelButton" Content="Cancel" HorizontalAlignment="Right" Margin="0,2,14,9" VerticalAlignment="Bottom" Click="CancelButton_Click" Width="75" Height="25" IsCancel="True"/>
+        <Button x:Name="FindIconButton" Content="Find..." HorizontalAlignment="Left" Margin="14,70,0,0" VerticalAlignment="Top" Click="FindIconButton_Click" Width="75" Height="25"/>
+        <Label x:Name="IconLabel" Content="Icon" HorizontalAlignment="Left" Margin="10,9,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="GameNameLabel" Content="Game name" HorizontalAlignment="Left" Margin="10,100,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="TransferCodeLabel" Content="Transfer code" HorizontalAlignment="Left" Margin="10,155,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="PasswordLabel" Content="Password" HorizontalAlignment="Left" Margin="10,210,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Expirationdate" Content="Expiration date" HorizontalAlignment="Left" Margin="10,265,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="GameNameTextBox" HorizontalAlignment="Left" Height="23" Margin="14,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="TransferCodeTextBox" HorizontalAlignment="Left" Height="23" Margin="14,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="PasswordTextBox" HorizontalAlignment="Left" Height="23" Margin="14,235,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Image x:Name="IconPreviewImage" HorizontalAlignment="Right" Height="75" Margin="0,9,14,0" VerticalAlignment="Top" Width="75">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="Resources/addNewEntry.bmp" TileMode="Tile"/>
+            </Image.OpacityMask>
+        </Image>
+        <Calendar x:Name="ExpirationDateCalendar" HorizontalAlignment="Left" Margin="12,290,0,0" VerticalAlignment="Top" Height="170" Width="180"/>
+
+    </Grid>
+</Window>
