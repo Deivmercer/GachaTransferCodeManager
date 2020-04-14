@@ -1,0 +1,10 @@
+﻿<Application x:Class="Gacha_Transfer_Code_Manager.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Gacha_Transfer_Code_Manager"
+             StartupUri="GTCManForm.xaml">
+    
+    <Application.Resources>
+        <BitmapImage x:Key="addNewEntryIcon" UriSource="/Resources/addNewEntry.bmp"/>
+    </Application.Resources>
+</Application>
